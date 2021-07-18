@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-// import Nav from "./components/Nav";
+import Nav from "./components/Nav/Nav";
 import StickyFooter from "./components/StickyFooter/StickyFooter";
 // import Wrapper from "./components/Wrapper";
 
@@ -14,12 +14,14 @@ function App() {
       <div>
         {/* <ThemeProvider theme={theme}> */}
           {/* <CssBaseline /> */}
-          {/* <Nav /> */}
+          <Nav />
           {/* <Wrapper> */}
-            {/* <Route exact path="/" component={About} />
+            {/* <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
-            <Route exact path="/discover" component={Discover} />
-            <Route exact path="/search" component={Search} /> */}
+            <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/pricing" component={Pricing} />
+            <Route exact path="/calendar" component={Calendar} /> 
+            <Route exact path="/contact" component={Contact} />  */}
           {/* </Wrapper> */}
           <StickyFooter />
         {/* </ThemeProvider> */}
