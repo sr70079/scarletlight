@@ -8,13 +8,28 @@ import StickyFooter from "./components/StickyFooter/StickyFooter";
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 
+// import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+// import { amber, teal } from '@material-ui/core/colors';
+
+// const theme = createMuiTheme({
+//   palette: {
+//     primary: amber,
+//     secondary: teal,
+//   },
+//   typography: {
+//     fontFamily: 'Playfair',
+//   }
+// });
+
 function App() {
   return (
+    // <ThemeProvider theme={theme}>
     <Router>
       <div>
         {/* <ThemeProvider theme={theme}> */}
-          {/* <CssBaseline /> */}
+          <CssBaseline />
           <Nav />
+          {/* <Route exact path="/about" component={About} /> */}
           {/* <Wrapper> */}
             {/* <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
@@ -27,6 +42,7 @@ function App() {
         {/* </ThemeProvider> */}
       </div>
     </Router>
+    // </ThemeProvider>
   );
 }
 
