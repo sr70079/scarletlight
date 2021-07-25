@@ -8,6 +8,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import logo from "./images/logo.jpg"
+import MenuItem from '@material-ui/core/MenuItem';
+import Menu from '@material-ui/core/Menu';
 // import ResponsiveImgMaterialUi from 'responsive-img-material-ui';
 
 const useStyles = makeStyles((theme) => ({
@@ -87,7 +89,7 @@ export default function ProminentAppBar() {
             <MoreIcon />
           </IconButton>
 
-          {/* <div>
+          <div>
                 <Menu
                 id="menu-appbar"
                 anchorEl={anchorEl}
@@ -103,10 +105,13 @@ export default function ProminentAppBar() {
                 open={open}
                 onClose={handleClose}
               >
-                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                <MenuItem onClick={handleClose}>My account</MenuItem>
+                <MenuItem onClick={handleClose}>Home</MenuItem>
+                <MenuItem onClick={handleClose}>About</MenuItem>
+                <MenuItem onClick={handleClose}>Portfolio</MenuItem>
+                <MenuItem onClick={handleClose}>Investment</MenuItem>
+                <MenuItem onClick={handleClose}>Contact</MenuItem>
               </Menu>
-          </div> */}
+          </div>
 
         </Toolbar>
       </AppBar>
