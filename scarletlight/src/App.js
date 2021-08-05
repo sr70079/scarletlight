@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Calendar from "./pages/Calendar";
-import Landing from "./pages/Landing";
-import Portfolio from "./pages/Portfolio";
-import Pricing from "./pages/Pricing";
+import About from "./views/About";
+import Contact from "./views/Contact";
+import Calendar from "./views/Calendar";
+import Landing from "./views/LandingPage/LandingPage";
+import Portfolio from "./views/Portfolio";
+import Pricing from "./views/Pricing";
 
 import Nav from "./components/Nav/Nav";
 import StickyFooter from "./components/StickyFooter/StickyFooter";
@@ -39,7 +39,7 @@ function App() {
       <Router>
         <div>
             <CssBaseline />
-            <Nav />
+            {/* <Nav /> */}
             {/* <Item /> */}
              
 
