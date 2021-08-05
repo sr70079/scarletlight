@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import About from "./views/About";
-import Contact from "./views/Contact";
+import Contact from "./views/ContactPage/ContactPage";
 import Calendar from "./views/Calendar";
 import Landing from "./views/LandingPage/LandingPage";
-import Portfolio from "./views/Portfolio";
+import Portfolio from "./views/Portfolio/Portfolio";
 import Pricing from "./views/Pricing";
 
 import Nav from "./components/Nav/Nav";
